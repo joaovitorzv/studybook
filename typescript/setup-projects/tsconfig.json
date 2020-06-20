@@ -20,5 +20,8 @@
       "@models/*": ["./src/models/*"],
       "@config/*": ["./src/config/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

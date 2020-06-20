@@ -1,11 +1,11 @@
-import express from "express";
+import express from 'express'
 
-import "@controllers/UserController";
+import '@controllers/UserController'
 
-const app = express();
+const app = express()
 
-app.get("/", (req, res) => {
-  return res.json({ working: false });
-});
+app.get('/', (req, res) => {
+  return res.json({ working: false })
+})
 
-app.listen(3333);
+app.listen(3333)
