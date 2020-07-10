@@ -20,7 +20,7 @@ interface IEmailService {
 
 class EmailService implements IEmailService {
   sendMail({ to, message }: IMessageDTO) {
-    console.log(`Email sent to ${to.name}: ${message.subject}`);
+    console.log(`Email sent to ${to.name}, at: ${new Date()} ${message.attachment ? 'attachments ' + message.attachment : ' no attachemnts'}`);
   }
 }
 
